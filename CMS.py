@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 
 # Load dataset
-df = pd.read_csv(r'E:\Reetam\MITWPU\TY\SEM 5\AAI\MP\archive\specialized_rater_pools_data.csv', low_memory=False)
+df = pd.read_csv(r'csv file path', low_memory=False)
 
 # Ensure 'comment_text' is a string and handle NaN values
 df['comment_text'] = df['comment_text'].fillna("").astype(str)
